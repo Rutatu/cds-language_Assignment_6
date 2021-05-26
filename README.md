@@ -2,7 +2,7 @@
 
 ***Class assignment for language analytics class at Aarhus University.***
 
-***2021-04-19**
+***2021-04-19***
 
 
 # Text classification using Deep Learning: TV series Game of Thrones season classification
@@ -100,40 +100,37 @@ Set-up:
 #1 Open terminal on worker02 or locally
 #2 Navigate to the environment where you want to clone this repository
 #3 Clone the repository
-$ git clone https://github.com/Rutatu/cds-visual_Assignment_4.git 
+$ git clone https://github.com/Rutatu/cds-language_Assignment_6.git 
 
 #4 Navigate to the newly cloned repo
-$ cd cds-visual_Assignment_4
+$ cd cds-language_Assignment_6
 
 #5 Create virtual environment with its dependencies and activate it
-$ bash create_classification_venv.sh
-$ source ./classification/bin/activate
+$ bash create_GoT_venv.sh
+$ source ./GoT/bin/activate
 
 ``` 
 
 Run the code:
 
 ```
-#6 Navigate to the directory of the script
+#6 Navigate to the directory of the scripts
 $ cd src
 
 #7 Run each code with default parameters
-$ python Logistic_Regression.py
-$ python Neural_Network.py
+$ python GoT_LogReg.py -dir ../data/Game_of_Thrones_Script.csv
+$ python GoT_deep.py -dir ../data/Game_of_Thrones_Script.csv 
 
 #8 Run each code with self-chosen parameters
-$ python Logistic_Regression.py -trs 0.9 -tes 0.1 -n lr_cm
-$ python Neural_Network.py -trs 0.7 -tes 0.3 -hl1 30 -hl2 15 -hl3 5 -ep 500 -n classification_report
+$ python GoT_LogReg.py -dir ../data/Game_of_Thrones_Script.csv -test 0.2
+$ python GoT_deep.py -dir ../data/Game_of_Thrones_Script.csv -test 0.3 -optim SGD -ep 50
 
-#9 Run the NN script only with hidden_layer_1:
-$ python Neural_Network.py -hl1 30 -hl2 0
-
-#10 To remove the newly created virtual environment
-$ bash kill_classification_venv.sh
+#9 To remove the newly created virtual environment
+$ bash kill_GoT_venv.sh
 
 #11 To find out possible optional arguments for both scripts
-$ python Logistic_Regression.py --help
-$ python Neural_Network.py --help
+$ python GoT_LogReg.py --help
+$ python GoT_deep.py --help
 
 
  ```
@@ -141,6 +138,8 @@ $ python Neural_Network.py --help
 I hope it worked!
 
 
-
-
 ## Results
+LR classifier achieved a weighted average accuracy of 26% for correctly classifying TV series Game of Thrones seasons. DL CNN classifier achieved a weighted average accuracy of 24%, which is slightly worse than LR classifier. Such results can indicate that it was a very challenging task to classify TV series seasons according to lines spoken, and more simplictic approach as LR can perform better. This might have happened for various reasons: not enough data (only 10 episodes per season, 8 seasons in total), seasons of TV series Game of Thrones migh be specifically hard to classify due to te nature of conversations, shallow or not relevant data preprocessing. GoT_CNN_classification_performance_graph suggest that ovefitting might have been a problem -  validation loss curve was increasing during the whole training which created a huge gap with training loss curve, while training accuracy reached an accuracy close to 100%. We can not yet conclude that scripts of TV series are not suitable for text classifiaction tasks, such as classifying seasons. More experimentation with different datasets and hyperparameters is needed.
+
+
+
