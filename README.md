@@ -29,12 +29,12 @@ Depiction of the full model´s architecture can be found in folder called 'out'.
 
 | File | Description |
 | --- | --- |
-| data/ | Folder containing files input data for tehe script |
+| data/ | Folder containing files input data for the script |
 | data/Game_of_Thrones_Script.csv| CSV file used as input for the script |
 | out/ | Folder containing files produced by the scripts |
 | out/CNN_Model´s_architecture.png | CNN model´s architecture |
 | out/GoT_CNN_classification_performance_graph.png | Performance graph of CNN classifier |
-| out/GoT_CNN_classifier_reportcsv| Classification metrics of the CNN classifier |
+| out/GoT_CNN_classifier_report.csv| Classification metrics of the CNN classifier |
 | out/GoT_LR_classification_report.csv | Classification metrics of the LR classifier |
 | out/GoT_LR_confusion_matrix.png | Confusion matrix of LR classifier |
 | src/ | Folder containing the scripts |
@@ -52,7 +52,7 @@ Depiction of the full model´s architecture can be found in folder called 'out'.
 
 ## Data
 
-Data used is a complete set of Game of Thrones script for all seasons in form of a table containing 6 columns with different data types used for various purposes. Description on each columns are provided on the data description part in a link below. For this assignment, columns 'Season' and 'Sentence' were used.
+Data used is a complete set of Game of Thrones script for all seasons (8 seasons in total, 10 episodes first 6 seasons, 7 and 6 episodes for the last two seasons) in form of a table containing 6 columns with different data types used for various purposes. Description of each column is provided in the data description part in a link below. For this assignment, columns 'Season' and 'Sentence' were used.
 
 
 Link to data: https://www.kaggle.com/albenft/game-of-thrones-script-all-seasons
