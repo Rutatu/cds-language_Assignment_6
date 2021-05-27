@@ -33,9 +33,10 @@ Depiction of the full model´s architecture can be found in folder called 'out'.
 | data/Game_of_Thrones_Script.csv| CSV file used as input for the script |
 | out/ | Folder containing files produced by the scripts |
 | out/CNN_Model´s_architecture.png | CNN model´s architecture |
-| out/GoT_CNN_classification_performance_graph.png | Confusion matrix of LR classifier |
-| out/GoT_CNN_classifier_report| Classification metrics of the CNN classifier |
-| out/NN_report.csv | Classification metrics of the LR classifier |
+| out/GoT_CNN_classification_performance_graph.png | Performance graph of CNN classifier |
+| out/GoT_CNN_classifier_reportcsv| Classification metrics of the CNN classifier |
+| out/GoT_LR_classification_report.csv | Classification metrics of the LR classifier |
+| out/GoT_LR_confusion_matrix.png | Confusion matrix of LR classifier |
 | src | Folder containing the scripts |
 | src/Logistic_Regression.py | Logistic Regression classifier script |
 | src/Neural_Network.py | Neural Network classifier script |
