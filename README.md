@@ -143,9 +143,10 @@ I hope it worked!
 
 
 ## Results
-LR classifier achieved a weighted average accuracy of 26% for correctly classifying TV series Game of Thrones seasons. DL CNN classifier achieved a weighted average accuracy of 24%, which is slightly worse than LR classifier. Such results can indicate that it was a very challenging task to classify TV series seasons according to lines spoken, and more simplictic approach as LR can perform better. This might have happened for various reasons: not enough data (only 10 episodes per season, 8 seasons in total), seasons of TV series Game of Thrones might be specifically hard to classify due to the nature of conversations, shallow or not relevant data preprocessing steps. 
 
-GoT_CNN_classification_performance_graph suggest that ovefitting might have been a problem -  validation loss curve was increasing during the whole training which created a huge gap with training loss curve, while training accuracy reached an accuracy close to 100%. We can not yet conclude that scripts of TV series are not suitable for text classifiaction tasks, such as classifying seasons. More experimentation with different datasets and hyperparameters is needed.
+LR classifier achieved a weighted average accuracy of 26% for correctly classifying TV series Game of Thrones seasons. DL CNN classifier achieved a weighted average accuracy of 24%, which is slightly worse than LR classifier. Such results can indicate that it was a very challenging task to classify TV series seasons according to lines spoken, and as simple approach as LR can perform better. This might have happened for various reasons: not enough data (only 10 episodes per season, 8 seasons in total), seasons of TV series Game of Thrones might be specifically hard to classify due to the nature of conversations, shallow or not relevant data preprocessing steps.
+
+GoT_CNN_classification_performance_graph suggest that overfitting might have been a problem - validation loss curve was increasing during the whole training which created a huge gap with training loss curve, while training accuracy reached an accuracy close to 100%. We cannot yet conclude that scripts of TV series are not suitable for text classification tasks, such as classifying seasons. More experimentation with different datasets and hyperparameters is needed.
 
 
 
