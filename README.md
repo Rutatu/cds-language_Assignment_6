@@ -9,15 +9,15 @@
 
 ## About the script
 
-This assignment is Class Assignment 6. The task was to create two scripts for text classification: one for Logistic Regression (LR) Classifier, another for Deep Learning CNN model (DL CNN). Both classifiers try to model the relationship between each season of Game of Thrones and the lines spoken. That is to say - can it predict which season a line comes from? Or to phrase that another way, is dialogue a good predictor of season?
+This assignment is Class Assignment 6. The task was to create two scripts for text classification: one for Logistic Regression (LR) Classifier, another for Deep Learning Convolutional Neural Network model (DL CNN). Both classifiers try to model the relationship between each season of Game of Thrones and the lines spoken. That is to say - can it predict which season a line comes from? Or to phrase that another way, is dialogue a good predictor of season?
 
 LR model takes TV series Game of Thrones script as an input, trains a Logistic Regression (LR) Classifier, prints the evaluation metrics to the terminal and saves classification report and confusion matrix in a directory. DL CNN model takes the same input, trains a DL CNN classifier, prints the evaluation metrics to the terminal, and saves classification report and a performance graph in a directory. 
 
 ## Methods
 
-The problem of the task relates to classifying seasons of TV series Game of Thrones. To address this problem, firstly, I have used a 'classical' machine learning solution such as CountVectorization + LogisticRegression to establish a baseline model performance. Afterwards, I have employed a Deep Learning CNN model using a neural network framework TensorFlow 2.4. CNNs are useful in text classification tasks, because they can model local structure in text (with their immediate context) and are more sophisticated that LR models, therefore suitable for complex cultural data. The CNN´s architecture consists of Embedding layer, Convolutional Layer (CONV) with ReLU activation function,  Max Pooling layer (MAXPOOL) and a Fully Connected Layer (FC). The output layer (OUT) uses softmax activation function and has 8 possible classes. 
+The problem of the task relates to classifying seasons of TV series Game of Thrones. To address this problem, firstly, I have used a 'classical' machine learning solution such as CountVectorization + LogisticRegression to establish a baseline model performance. Afterwards, I have employed a Deep Learning CNN model using a neural network framework TensorFlow 2.4. CNNs are useful in text classification tasks, because they can model local structure in text (with their immediate context) and are more sophisticated that LR models, therefore suitable for complex cultural data. The CNN´s architecture consists of Embedding layer, Convolutional Layer (CONV) with ReLU activation function,  Global Max Pooling layer (GlobalMAXPOOL) and a Fully Connected Layer (FC). The output layer (OUT) uses softmax activation function and has 8 possible classes. 
 
-Model´s architecture: Embedding -> CONV+ReLU -> MAXPOOL -> FC+ReLU -> OUT(softmax)
+Model´s architecture: Embedding -> CONV+ReLU -> GlobalMAXPOOL -> FC+ReLU -> OUT(softmax)
 
 CNNs are prone to overfitting, therefore I applied a weight regularization method to CONV and FC layers to minimize the overfitting. I have used L2 regularization to constrain how the model performs (l2 = L2(0.0001)).
   
