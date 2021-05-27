@@ -37,15 +37,15 @@ Depiction of the full model´s architecture can be found in folder called 'out'.
 | out/GoT_CNN_classifier_reportcsv| Classification metrics of the CNN classifier |
 | out/GoT_LR_classification_report.csv | Classification metrics of the LR classifier |
 | out/GoT_LR_confusion_matrix.png | Confusion matrix of LR classifier |
-| src | Folder containing the scripts |
-| src/Logistic_Regression.py | Logistic Regression classifier script |
-| src/Neural_Network.py | Neural Network classifier script |
-| utils/ | Folder containing utility scripts for the project  |
+| src/ | Folder containing the scripts |
+| src/GoT_deep.py | CNN classifier script |
+| src/GoT_LogReg.py | Logistic Regression classifier script |
+| utils/ | Folder containing utility script for the project  |
 | utils/classifier_utils.py | utility script used in LR classifier script |
-| utils/neuralnetwork.py | utility script used in NN classifier script |
+| LICENSE | A software license defining what other users can and can't do with the source code |
 | README.md | Description of the assignment and the instructions |
-| create_classification_venv.bash | bash file for creating a virtual environmment |
-| kill_classification_venv.bash | bash file for removing a virtual environment |
+| create_GoT_venv.bash | bash file for creating a virtual environmment |
+| kill_GoT_venv.bash | bash file for removing a virtual environment |
 | requirements.txt | list of python packages required to run the script |
 
 
